@@ -1,16 +1,17 @@
-%global             source_name firefox
-%global             application_name firefox-dev
-%global             full_name firefox-developer-edition
+%global             source_name floorp
+%global             application_name floorp
+%global             full_name floorp
 %global             internal_name firefox-aurora
 
-Name:               firefox-dev
-Version:            118.0b8
+Name:               floorp
+Version:            v11.3.3
 Release:            2%{?dist}
-Summary:            Firefox Developer Edition (formerly "Aurora") pre-beta Web browser
+Summary:            Floorp Web browser
 
 License:            MPLv1.1 or GPLv2+ or LGPLv2+
-URL:                https://www.mozilla.org/en-US/firefox/developer/
+URL:                https://github.com/Floorp-Projects/Floorp
 Source0:            https://download-installer.cdn.mozilla.net/pub/devedition/releases/%{version}/linux-x86_64/en-US/firefox-%{version}.tar.bz2
+Source0:            https://github.com/Floorp-Projects/Floorp/releases/download/%{version}/floorp-%{version}.linux-x86_64.tar.bz2
 Source1:            %{internal_name}.desktop
 Source2:            policies.json
 Source3:            %{internal_name}
@@ -20,29 +21,15 @@ ExclusiveArch:      x86_64
 Requires(post):     gtk-update-icon-cache
 
 %description
-This is a pre-beta release of Mozilla Firefox intended for Web developers and
-enthusiasts who want early access to new features. It receives new updates
-(almost) daily, adding and refining support for the very latest Web standards
-that won't make it into the stable release of Firefox for some months. It also
-comes with some addons for Web development enabled by default.
+This is a release of the Floorp web browser. Floorp is a fork of Firefox ESR
+with additional features aimed to make the overall Firefox Browser experince
+better than vanilla Firefox.
 
-You may actually find that Developer Edition works just fine for normal everyday
-use: Some users set it as their default Web browser. You can sign in to your
-normal Firefox account and sync your preferences, extensions, and bookmarks,
-etc. Or you can keep the Firefox versions separate, and use different profiles,
-even different browser UI themes. Firefox Developer Edition can install
-alongside the stable release of Firefox, making it easy to switch back and forth
-between the two versions.
-
-That being said, a lot of the technology here is still experimental, and there
-will very likely be some bugs, so just remember that by using Developer Edition,
-you're helping Mozilla make Firefox the best Web browser they can. And have fun!
-
-Bugs related to Firefox Developer Edition should be reported directly to Mozilla: 
-<https://bugzilla.mozilla.org/>
+Bugs related to Floorp should be reported directly to the Floorp GitHub repo: 
+<https://https://github.com/Floorp-Projects/Floorp/issues/>
 
 Bugs related to this package should be reported at this GitHub project:
-<https://github.com/the4runner/firefox-dev/issues/>
+<https://github.com/LovecraftianGodsKiller/floorp/issues/>
 
 %prep
 %setup -q -n %{source_name}
