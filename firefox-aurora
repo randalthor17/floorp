@@ -4,4 +4,4 @@
 
 export MOZ_APP_LAUNCHER="$0"
 
-exec /opt/firefox-dev/firefox "$@"
+exec /opt/floorp/floorp "$@"
