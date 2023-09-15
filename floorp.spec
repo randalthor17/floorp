@@ -5,7 +5,7 @@
 
 Name:               floorp
 Version:            11.3.3
-Release:            2%{?dist}
+Release:            1%{?dist}
 Summary:            Floorp Web browser
 
 License:            MPLv1.1 or GPLv2+ or LGPLv2+
