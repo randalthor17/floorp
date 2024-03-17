@@ -14,6 +14,7 @@ Source0:            https://github.com/Floorp-Projects/Floorp/releases/download/
 Source1:            %{internal_name}.desktop
 Source2:            policies.json
 Source3:            %{internal_name}
+Source4:            0023-Bug-1419151-Add-Unity-menubar-support.patch
 
 ExclusiveArch:      x86_64
 
