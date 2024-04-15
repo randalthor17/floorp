@@ -4,7 +4,7 @@
 %global             internal_name floorp-ablaze
 
 Name:               floorp
-Version:            11.11.2
+Version:            11.12.0
 Release:            1%{?dist}
 Summary:            Floorp Web browser
 
